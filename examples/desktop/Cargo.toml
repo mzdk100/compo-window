@@ -1,0 +1,8 @@
+[package]
+name = "compo-window-desktop"
+version.workspace = true
+edition.workspace = true
+publish = false
+
+[target.'cfg(any(windows, target_os = "macos"))'.dependencies]
+compo-window.path = "../../"
